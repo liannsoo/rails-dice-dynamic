@@ -1,0 +1,8 @@
+<h1><%= @num_dice %>d<%= @sides %></h1>
+<div>
+  <ul>
+    <% @results.each do |result| %>
+      <li><%= result %></li>
+    <% end %>
+  </ul>
+</div>

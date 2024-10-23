@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root 'dice#new'
-  get '/roll/:num_dice/:sides', to: 'dice#roll', as: 'roll'
+  get '/dice/:num_dice/:sides', to: 'dice#roll', as: 'roll'
+
 end

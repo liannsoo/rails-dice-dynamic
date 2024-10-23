@@ -3,8 +3,8 @@ class DiceController < ApplicationController
   end
 
   def roll
+    @num_dice = params[:num_dice].to_i
     @sides = params[:sides].to_i
-    @rolls = params[:rolls].to_i
-    @results = Array.new(@rolls) { rand(1..@sides) }
+    @results = Array.new(@num_dice) { rand(1..@sides) }
   end
 end
