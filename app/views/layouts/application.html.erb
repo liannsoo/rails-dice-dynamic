@@ -15,13 +15,13 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div><a href="/">Home</a></div>
-      <div><a href="/dice/2/6">2d6</a></div>
-      <div><a href="/dice/2/10">2d10</a></div>
-      <div><a href="/dice/1/20">1d20</a></div>
-      <div><a href="/dice/5/4">5d4</a></div>
-    </div>
+  <div class='navbar'>
+    <div><%= link_to "Home", root_path %></div>
+    <div><%= link_to "2d6", roll_path(2, 6) %></div>
+    <div><%= link_to "2d10", roll_path(2, 10) %></div>
+    <div><%= link_to "1d20", roll_path(1, 20) %></div>
+    <div><%= link_to "5d4", roll_path(5, 4) %></div>
+  </div>
 
     <%= yield %>
 
